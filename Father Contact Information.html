@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father's Contact Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #005fa3;
+            padding-bottom: 15px;
+        }
+        .contact-header h1 {
+            color: #005fa3;
+            margin: 0;
+        }
+        .contact-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #005fa3;
+            border-radius: 4px;
+        }
+        .contact-item label {
+            display: block;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 6px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-item p {
+            margin: 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .contact-link {
+            display: inline-block;
+            margin-top: 5px;
+            color: #005fa3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #005fa3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #005fa3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .action-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .action-buttons a {
+            display: inline-block;
+            margin: 0 8px;
+            padding: 10px 20px;
+            background: goldenrod;
+            color: #222;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .action-buttons a:hover {
+            background: #e6c200;
+        }
+    </style>
+</head>
+<body class="animated-bg">
+    <div class="sky"></div>
+    <div class="container contact-container">
+        <div class="contact-header">
+            <h1>Father's Contact Information</h1>
+            <p style="color: #666; margin: 5px 0 0 0;">Mahip</p>
+            <div style="margin-top:12px;">
+                <img id="father-photo-display" class="preview-img" style="max-width:180px; display:none; border-radius:8px;" alt="Father photo">
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p><strong>Below is the complete contact information for my father.</strong> Feel free to reach out using any of the provided contact details.</p>
+        </div>
+
+        <!-- First Name -->
+        <div class="contact-item">
+            <label>First Name</label>
+            <p>Mahip</p>
+        </div>
+
+        <!-- Last Name -->
+        <div class="contact-item">
+            <label>Last Name / Surname</label>
+            <p>Pandey</p>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item">
+            <label>Email Address</label>
+            <p>Pandeymahip89@gmail.com</p>
+            <a href="mailto:Pandeymahip89@gmail.com" class="contact-link">Send Email</a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="contact-item">
+            <label>Phone Number</label>
+            <p>9082835894</p>
+            <a href="tel:9082835894" class="contact-link">Call Now</a>
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="contact-item">
+            <label>Emergency Contact Number</label>
+            <p>7651882801</p>
+            <a href="tel:7651882801" class="contact-link">Emergency Call</a>
+        </div>
+
+        <!-- Address -->
+        <div class="contact-item">
+            <label>Address</label>
+            <p>Mirzapur,kirtartara 231001 </p>
+        </div>
+        <!-- Thank you -->
+        <div class="animated-bg">
+    <div class="sky"></div>
+    <div class="thank-you-container">
+        <div class="thank-you-emoji">🙏</div>
+        <h1>Thank You!</h1>
+        
+
+        <!-- LinkedIn Profile -->
+        <div class="contact-item">
+            <label>LinkedIn Profile</label>
+            <p><a href="https://www.linkedin.com/in/mahip-pandey-880280220?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="contact-link">View LinkedIn Profile</a></p>
+        </div>
+
+        <!-- Additional Notes -->
+        <div class="contact-item">
+            <label>Additional Information</label>
+            <p>[Add any other relevant contact information or notes here]</p>
+        </div>
+
+        <div class="action-buttons">
+            <a class="btn" href="Intro to my father website.html">← Back to Home</a>
+            <a class="btn" href="Contact Information.html">View User Form</a>
+            <a class="btn" href="thank-you.html">Thank You 🙏</a>
+        </div>
+        <script src="photo.js" defer></script>
+        <script src="sky.js"></script>
+    </div>
+</body>
+</html>

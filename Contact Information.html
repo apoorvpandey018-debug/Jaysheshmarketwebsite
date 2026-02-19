@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #222;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            color: #333;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="tel"]:focus {
+            outline: none;
+            border-color: #005fa3;
+            box-shadow: 0 0 5px rgba(0,95,163,0.3);
+        }
+        .form-group input[type="submit"] {
+            background: goldenrod;
+            color: #222;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .form-group input[type="submit"]:hover {
+            background: #e6c200;
+        }
+        .form-group input[type="reset"] {
+            background: #ccc;
+            color: #222;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .form-group input[type="reset"]:hover {
+            background: #999;
+        }
+        .button-group {
+            text-align: center;
+        }
+        .info-box {
+            background: #f0f8ff;
+            border-left: 4px solid #005fa3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #005fa3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="animated-bg">
+    <div class="sky"></div>
+    <div class="container form-container">
+        <h1>User Contact Information</h1>
+        <div class="info-box">
+            <p><strong><span style="color: green;">Please fill in all the fields below with accurate information.</strong></span></strong></p>
+        </div>
+        
+        <form id="contact-form">
+            
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname/Last Name:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="email1">Email Address:</label>
+                <input type="email" id="email1" name="email1" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email2">Confirm Email Address:</label>
+                <input type="email" id="email2" name="email2" placeholder="Re-enter your email" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergency-phone">Emergency Phone Number:</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" placeholder="Enter emergency contact number" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="father-name">Father's Name:</label>
+                <input type="text" id="father-name" name="father-name" placeholder="Enter your father's name" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="mother-name">Mother's Name:</label>
+                <input type="text" id="mother-name" name="mother-name" placeholder="Enter your mother's name" required>
+            </div>
+
+            
+            <div class="form-group button-group">
+                <input class="btn" type="submit" value="Submit Information">
+               <link rel="" href="Father Contact information.html">
+                <input class="btn" type="reset" value="Reset Form">
+            </div>
+        </form>
+
+        <a href="Intro to my father website.html" class="back-link">← Back to Home</a>
+        <script src="sky.js"></script>
+        <script>
+            // When the user submits the contact form, open Father's Contact Information page
+            (function(){
+                const form = document.getElementById('contact-form');
+                if(!form) return;
+                form.addEventListener('submit', function(e){
+                    e.preventDefault();
+                    // You can add client-side validation here if needed (HTML 'required' covers basics)
+                    window.location.href = 'Father Contact Information.html';
+                });
+            })();
+        </script>
+    </div>
+</body>
+</html>

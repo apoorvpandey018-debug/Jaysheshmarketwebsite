@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+    <style>
+        .thank-you-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+            text-align: center;
+        }
+        .thank-you-container h1 {
+            color: #005fa3;
+            font-size: 36px;
+            margin-top: 0;
+        }
+        .thank-you-emoji {
+            font-size: 80px;
+            margin: 20px 0;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .thank-you-message {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin: 30px 0;
+        }
+        .thank-you-message p {
+            margin: 15px 0;
+            color: #555;
+        }
+        .highlight {
+            color: #005fa3;
+            font-weight: 600;
+        }
+        .action-buttons {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .action-buttons a {
+            display: inline-block;
+            margin: 8px;
+            padding: 12px 24px;
+            background: #005fa3;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 120ms ease, box-shadow 160ms ease;
+        }
+        .action-buttons a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(15,81,130,0.12);
+        }
+        .heart-animation {
+            display: inline-block;
+            margin: 0 5px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="animated-bg">
+    <div class="sky"></div>
+    <div class="thank-you-container">
+        <div class="thank-you-emoji">🙏</div>
+        <h1>Thank You!</h1>
+        
+        <div class="thank-you-message">
+            <p>We are deeply grateful for your visit to our website!</p>
+            
+            <p>Your interest in learning more about <span class="highlight">my father</span> and our family means a lot to us.</p>
+            
+            <p>Thank you for taking the time to:</p>
+            <ul style="text-align: left; display: inline-block; color: #555;">
+                <li>View our father's profile and contact information</li>
+                <li>Share your personal details with us</li>
+                <li>Connect with our family online</li>
+            </ul>
+            
+            <p>We hope you found the information helpful and inspiring. Your support and connection are <span class="highlight">truly valued</span> <span class="heart-animation">❤️</span></p>
+            
+            <p style="font-style: italic; margin-top: 30px;">
+                "Success is not final, failure is not fatal. It is the courage to continue that counts." 
+                <br><br>
+                We appreciate you being a part of our journey!
+            </p>
+        </div>
+        
+        <div class="action-buttons">
+            <a href="Intro to my father website.html">← Back to Home</a>
+            <a href="Father Contact Information.html">View Father's Info</a>
+        </div>
+    </div>
+    <script src="sky.js"></script>
+</body>
+</html>
